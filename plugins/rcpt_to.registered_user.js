@@ -30,8 +30,6 @@ var options = {
 
 exports.hook_init_master = function (next) {
     var dbUri = this.config.get('rcpt_to.registered_user.db', 'value');
-    server.logdebug(this, 'Connecting to ' + dbUri);
-
     mongoose.connect(dbUri, options);
 
     mongoose.connection.on('error', function (err) {

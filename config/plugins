@@ -25,4 +25,4 @@ max_unrecognized_commands
 #rcpt_to.access
 rcpt_to.registered_user
 
-testqueue
+test_queue
