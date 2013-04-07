@@ -23,10 +23,6 @@ max_unrecognized_commands
 
 # control which "RCPT TO" addresses you reject. See docs.
 #rcpt_to.access
-rcpt_to.registered_user.js
-
-# Only accept mail for your personal list of hosts. Edit config/host_list
-# NOTE: THIS IS REQUIRED for inbound email.
-rcpt_to.in_host_list
+rcpt_to.registered_user
 
 testqueue
