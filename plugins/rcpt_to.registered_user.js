@@ -1,8 +1,16 @@
 // Check RCPT TO domain belongs to a user
 
 var mongoose = require('mongoose');
-var userSchema = require('./schemas/user');
-var configSchema = require('./schemas/config');
+var Schema = require('mongoose').Schema;
+var userSchema = new Schema({
+    aliases: Schema.Types.Mixed,
+    email: String,
+    name: String
+});
+var configSchema = new Schema({
+    option: String,
+    value: Schema.Types.Mixed
+});
 
 var User = mongoose.model('User', userSchema);
 var Config = mongoose.model('Config', configSchema);
