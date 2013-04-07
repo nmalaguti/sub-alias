@@ -3,6 +3,7 @@
     "description": "An SMTP Server",
     "version": "0.0.1",
     "dependencies": {
-        "mongodb": "*"    
+        "mongodb": "*",
+        "when": "*"
     }
 }
